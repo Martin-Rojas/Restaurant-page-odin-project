@@ -9,11 +9,36 @@ body {
 }
 header {
   border: 2px red dashed;
+  background-color: #f97316;
+  position: sticky;
+  top: 0;
 }
 nav {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
-h1 {
-  color: red;
+header button {
+  background-color: #f97316;
+  border: none;
+  color: #f6f8fc;
+  width: 7rem;
+  font-weight: bolder;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+header button:hover{
+    background-color: #e86a10;
+    font-size: 19px;
+    border-radius: 50%;
+}
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
