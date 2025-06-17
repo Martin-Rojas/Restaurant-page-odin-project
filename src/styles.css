@@ -43,25 +43,25 @@ header button:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #e86a10;
+  background-color: #f9d6be;
 }
 
 #content h1 {
-  color: #e1e4e7;
+  color: #484c50;
   margin: 10px;
   font-size: 3rem;
 }
 
 #content p {
-  color: #fff;
+  color: #b0a9a9;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 #content button {
   width: 20%;
-  border: white 1px solid;
-  background-color: #e86a10;
+  border: #f97316 1px solid;
+  background-color: #f97316;
   cursor: pointer;
   color: white;
   border-radius: 46%;
@@ -78,14 +78,14 @@ header button:hover {
 
 #content img{
     width: 80%;
-    height: 500px;
+    height: auto;
 }
 
 .site-footer{
     width: 100%;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     background-color: #f97316;
-    color: #fff;
+    color: #484c50;
     text-align: center;
     padding: 1rem 0;
     font-size: .8rem;
