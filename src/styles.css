@@ -76,17 +76,64 @@ header button:hover {
   transition: 2ms all;
 }
 
-#content img{
-    width: 80%;
-    height: auto;
+#content img {
+  width: 80%;
+  height: auto;
 }
 
-.site-footer{
-    width: 100%;
-    /* margin-top: 10px; */
-    background-color: #f97316;
-    color: #484c50;
-    text-align: center;
-    padding: 1rem 0;
-    font-size: .8rem;
+.site-footer {
+  width: 100%;
+  /* margin-top: 10px; */
+  background-color: #f97316;
+  color: #484c50;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.8rem;
 }
+
+/* Card  */
+/* Container that holds the cards */
+#menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* Card Style */
+.card {
+  background-color: #fff8f2;
+  border: 1px solid #f97316;
+  border-radius: 10px;
+  width: 220px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  color: #f97316;
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+}
+
+.card p {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
