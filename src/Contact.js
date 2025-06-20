@@ -10,6 +10,7 @@ export default function createContactPage() {
   // Contact div
   const contactContainer = document.createElement(`div`);
 
+  // COntact element
   const contactInfo = document.createElement(`div`);
   contactInfo.setAttribute(`id`, `contactInfo`);
   const h4 = document.createElement(`h4`);
@@ -32,5 +33,48 @@ export default function createContactPage() {
   email.innerHTML = `info@restaurant.com`;
   contactInfo.appendChild(email);
 
-  contentElement.appendChild(contactInfo);
+  contactContainer.appendChild(contactInfo);
+
+  // Create form
+  const form = document.createElement(`form`);
+
+  // create label for email
+  const labelEmail = document.createElement(`label`);
+  labelEmail.innerHTML = `Email:`;
+  labelEmail.setAttribute(`for`, `email`);
+  form.appendChild(labelEmail);
+
+  // create input for email
+  const inputEmail = document.createElement(`input`);
+  inputEmail.setAttribute(`type`, `email`);
+  inputEmail.setAttribute(`id`, `email`);
+  inputEmail.setAttribute(`name`, `email`);
+  inputEmail.setAttribute(`placeholder`, `email`);
+  form.appendChild(inputEmail);
+
+  //   Crate label for message
+  const labelMessage = document.createElement(`label`);
+  labelMessage.innerHTML = `Message:`;
+  labelMessage.setAttribute(`for`, `message`);
+  form.appendChild(labelMessage);
+
+  // Create input for message
+  const textarea = document.createElement(`textarea`);
+  textarea.setAttribute(`id`, `message`);
+  textarea.setAttribute(`name`, `message`);
+  textarea.setAttribute(`rows`, `5`);
+  textarea.setAttribute(`cols`, `30`);
+  textarea.setAttribute(`placeholder`, `Type your message here...`);
+
+  form.appendChild(textarea);
+  // Create btn
+  const submitBtn = document.createElement(`button`);
+  submitBtn.setAttribute(`type`, `submit`);
+  submitBtn.setAttribute("id", `btn-form`);
+  submitBtn.classList.add("submit-btn");
+  submitBtn.innerText = `Send Message`;
+  form.appendChild(submitBtn);
+
+  contactContainer.appendChild(form);
+  contentElement.appendChild(contactContainer);
 }
