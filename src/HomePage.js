@@ -1,5 +1,5 @@
+import createMenuPage from "./MenuPage";
 function createHomePage() {
-
   // Get parent element
   const content = document.getElementById("content");
   content.innerHTML = ``;
@@ -20,6 +20,9 @@ function createHomePage() {
   // Create a Button element
   const btnElement = document.createElement("button");
   btnElement.innerText = `Menu`;
+  btnElement.addEventListener(`click`, () => {
+    createMenuPage();
+  });
   content.appendChild(btnElement);
 
   // Create an img element
